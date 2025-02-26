@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "es26VhUoFCZNCNf/+1Q2k5n6UWxObUg59fF+/zbMx/C2dvo/WRPB1A8R5NjyNgZUGvuyQPOBVKVzriodSJAgQQ==",
+  "success": true,
+  "projectFilePath": "D:\\公司\\项目\\项目开发\\SqlFreeTest\\FreeSqlService\\FreeSqlService.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Lenovo\\.nuget\\packages\\freesql\\3.5.104\\freesql.3.5.104.nupkg.sha512",
+    "C:\\Users\\Lenovo\\.nuget\\packages\\freesql.provider.sqlite\\3.5.104\\freesql.provider.sqlite.3.5.104.nupkg.sha512",
+    "C:\\Users\\Lenovo\\.nuget\\packages\\stub.system.data.sqlite.core.netstandard\\1.0.115.5\\stub.system.data.sqlite.core.netstandard.1.0.115.5.nupkg.sha512",
+    "C:\\Users\\Lenovo\\.nuget\\packages\\system.data.sqlite.core\\1.0.115.5\\system.data.sqlite.core.1.0.115.5.nupkg.sha512"
+  ],
+  "logs": []
+}

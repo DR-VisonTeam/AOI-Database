@@ -1,0 +1,253 @@
+{
+  "version": 3,
+  "targets": {
+    "net7.0-windows7.0": {
+      "FreeSql/3.5.104": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/FreeSql.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/FreeSql.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "FreeSql.Provider.Sqlite/3.5.104": {
+        "type": "package",
+        "dependencies": {
+          "FreeSql": "3.5.104",
+          "System.Data.SQLite.Core": "1.0.115.5"
+        },
+        "compile": {
+          "lib/netstandard2.0/FreeSql.Provider.Sqlite.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/FreeSql.Provider.Sqlite.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "Stub.System.Data.SQLite.Core.NetStandard/1.0.115.5": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/System.Data.SQLite.dll": {
+            "related": ".dll.altconfig;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/System.Data.SQLite.dll": {
+            "related": ".dll.altconfig;.xml"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/linux-x64/native/SQLite.Interop.dll": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/osx-x64/native/SQLite.Interop.dll": {
+            "assetType": "native",
+            "rid": "osx-x64"
+          },
+          "runtimes/win-x64/native/SQLite.Interop.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x86/native/SQLite.Interop.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          }
+        }
+      },
+      "System.Data.SQLite.Core/1.0.115.5": {
+        "type": "package",
+        "dependencies": {
+          "Stub.System.Data.SQLite.Core.NetStandard": "[1.0.115.5]"
+        }
+      },
+      "FreeSqlService/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "FreeSql": "3.5.104",
+          "FreeSql.Provider.Sqlite": "3.5.104"
+        },
+        "compile": {
+          "bin/placeholder/FreeSqlService.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FreeSqlService.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      }
+    }
+  },
+  "libraries": {
+    "FreeSql/3.5.104": {
+      "sha512": "U4G6R/clfWEnizwlvM7s3MRt0MafSmLODIMJZeEPGIXjoW4xMBpXYdvEKYf2ipwvH8F9BiiArNQktkmWC6F4Ig==",
+      "type": "package",
+      "path": "freesql/3.5.104",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "freesql.3.5.104.nupkg.sha512",
+        "freesql.nuspec",
+        "lib/net40/FreeSql.dll",
+        "lib/net40/FreeSql.pdb",
+        "lib/net40/FreeSql.xml",
+        "lib/net45/FreeSql.dll",
+        "lib/net45/FreeSql.pdb",
+        "lib/net45/FreeSql.xml",
+        "lib/net451/FreeSql.dll",
+        "lib/net451/FreeSql.pdb",
+        "lib/net451/FreeSql.xml",
+        "lib/netstandard2.0/FreeSql.dll",
+        "lib/netstandard2.0/FreeSql.pdb",
+        "lib/netstandard2.0/FreeSql.xml",
+        "lib/netstandard2.1/FreeSql.dll",
+        "lib/netstandard2.1/FreeSql.pdb",
+        "lib/netstandard2.1/FreeSql.xml",
+        "logo.png",
+        "readme.md"
+      ]
+    },
+    "FreeSql.Provider.Sqlite/3.5.104": {
+      "sha512": "mUWx13op1V7q7uQRcOLu+S1/pZt2WKU2uyCaufPjM8mfPV8gttDztMcSYG6YIip6mBJtgd6KRXvT0SVqORKi0A==",
+      "type": "package",
+      "path": "freesql.provider.sqlite/3.5.104",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "freesql.provider.sqlite.3.5.104.nupkg.sha512",
+        "freesql.provider.sqlite.nuspec",
+        "lib/net40/FreeSql.Provider.Sqlite.dll",
+        "lib/net40/FreeSql.Provider.Sqlite.pdb",
+        "lib/net45/FreeSql.Provider.Sqlite.dll",
+        "lib/net45/FreeSql.Provider.Sqlite.pdb",
+        "lib/netstandard2.0/FreeSql.Provider.Sqlite.dll",
+        "lib/netstandard2.0/FreeSql.Provider.Sqlite.pdb",
+        "logo.png",
+        "readme.md"
+      ]
+    },
+    "Stub.System.Data.SQLite.Core.NetStandard/1.0.115.5": {
+      "sha512": "WfrqQg6WL+r4H1sVKTenNj6ERLXUukUxqcjH1rqPqXadeIWccTVpydESieD7cZ/NWQVSKLYIHuoBX5du+BFhIQ==",
+      "type": "package",
+      "path": "stub.system.data.sqlite.core.netstandard/1.0.115.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/System.Data.SQLite.dll",
+        "lib/netstandard2.0/System.Data.SQLite.dll.altconfig",
+        "lib/netstandard2.0/System.Data.SQLite.xml",
+        "lib/netstandard2.1/System.Data.SQLite.dll",
+        "lib/netstandard2.1/System.Data.SQLite.dll.altconfig",
+        "lib/netstandard2.1/System.Data.SQLite.xml",
+        "runtimes/linux-x64/native/SQLite.Interop.dll",
+        "runtimes/osx-x64/native/SQLite.Interop.dll",
+        "runtimes/win-x64/native/SQLite.Interop.dll",
+        "runtimes/win-x86/native/SQLite.Interop.dll",
+        "stub.system.data.sqlite.core.netstandard.1.0.115.5.nupkg.sha512",
+        "stub.system.data.sqlite.core.netstandard.nuspec"
+      ]
+    },
+    "System.Data.SQLite.Core/1.0.115.5": {
+      "sha512": "vADIqqgpxaC5xR6qOV8/KMZkQeSDCfmmWpVOtQx0oEr3Yjq2XdTxX7+jfE4+oO2xPovAbYiz6Q5cLRbSsDkq6Q==",
+      "type": "package",
+      "path": "system.data.sqlite.core/1.0.115.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "system.data.sqlite.core.1.0.115.5.nupkg.sha512",
+        "system.data.sqlite.core.nuspec"
+      ]
+    },
+    "FreeSqlService/1.0.0": {
+      "type": "project",
+      "path": "../FreeSqlService/FreeSqlService.csproj",
+      "msbuildProject": "../FreeSqlService/FreeSqlService.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net7.0-windows7.0": [
+      "FreeSqlService >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Lenovo\\.nuget\\packages\\": {},
+    "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\公司\\项目\\项目开发\\SqlFreeTest\\DataBaseFreeSql\\DataBaseFreeSql.csproj",
+      "projectName": "DataBaseFreeSql",
+      "projectPath": "D:\\公司\\项目\\项目开发\\SqlFreeTest\\DataBaseFreeSql\\DataBaseFreeSql.csproj",
+      "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
+      "outputPath": "D:\\公司\\项目\\项目开发\\SqlFreeTest\\DataBaseFreeSql\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net7.0-windows"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net7.0-windows7.0": {
+          "targetAlias": "net7.0-windows",
+          "projectReferences": {
+            "D:\\公司\\项目\\项目开发\\SqlFreeTest\\FreeSqlService\\FreeSqlService.csproj": {
+              "projectPath": "D:\\公司\\项目\\项目开发\\SqlFreeTest\\FreeSqlService\\FreeSqlService.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net7.0-windows7.0": {
+        "targetAlias": "net7.0-windows",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          },
+          "Microsoft.WindowsDesktop.App.WPF": {
+            "privateAssets": "none"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
